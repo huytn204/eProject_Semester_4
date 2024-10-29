@@ -1,0 +1,9 @@
+.booking-detail {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.booking-detail h2 {
+    margin-bottom: 20px;
+}

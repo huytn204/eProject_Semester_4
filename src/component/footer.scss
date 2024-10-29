@@ -1,0 +1,112 @@
+@use "sass:map";
+@import "style/pages/_theme.scss";
+.footer{
+    background: #F3F6FA;
+    padding-top: 70px;
+    padding-bottom: 0;
+    
+    
+    .footer_about{
+        margin-bottom: 30px;
+
+        .footer_about_logo {
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        span{
+            color: map.get($theme_colors, "normal-text");
+            margin-left: 50px;
+            margin-top: 0px;
+        }
+
+        p {
+            font-size: 16px;
+            color: map.get($theme_colors, "normal-text");
+            line-height: 36px;
+        }
+
+    }
+    .footer_widget {
+        margin-bottom: 30px;
+        overflow: hidden;
+
+        h6{
+            color: map.get($theme_colors, "normal-text");
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .box{
+            float: left;
+            width: 50%;
+
+            p{
+                a{
+                    color: map.get($theme_colors, "normal-text");
+                    font-size: 14px;
+                    line-height: 32px;
+                    text-decoration: none;
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            color: map.get($theme_colors, "normal-text");
+            margin-bottom: 30px;
+        }
+
+        form{
+            margin-bottom: 30px;
+
+            .group {
+                display: flex;
+                align-items: center;
+
+                input{
+                    width: 100%;
+                    font-size: 16px;
+                    padding-left: 20px;
+                    color: map.get($theme_colors, "normal-text");
+                    height: 46px;
+                    border: 1px solid #ededed;
+    
+                    ::placeholder{
+                        color: map.get($theme_colors, "normal-text");
+                    }
+               }
+            
+            }
+
+            button{
+                padding: 0 26px;
+                height: 46px;
+                min-width: max-content;
+            }
+        }
+        .footer_widget_social{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            margin-top: 30px;
+            div {
+                :hover{
+                    background: map.get($theme_colors, "main");
+                    color: #ffffff;
+                    border-color: #ffffff;
+                }
+
+                svg {
+                    font-size: 30px;
+                    color: #404040;
+                    border: 1px solid #ededed;
+                    border-radius: 50%;
+                    transition: all, 0.3s;
+                }
+            }
+        }
+    }
+
+    
+
+    
+}

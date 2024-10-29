@@ -1,0 +1,54 @@
+// Variables
+$primary-color: #ffce2b;
+$secondary-color: #ff416c;
+$background-color: #f7f7f7;
+$text-light-color: white;
+
+// Mixin for button hover effect
+@mixin button-hover($hover-bg, $hover-color) {
+  &:hover {
+    background-color: $hover-bg;
+    color: $hover-color;
+  }
+}
+
+// General styles
+
+
+.login-signup-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-panel {
+  padding: 40px;
+}
+
+.signup-panel {
+  background: linear-gradient(to right, $secondary-color, $primary-color);
+  color: $text-light-color;
+  padding: 40px;
+  border-radius: 0 10px 10px 0;
+}
+
+.social-login button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+
+.signup-btn {
+  background-color: transparent;
+  border-color: $text-light-color;
+  color: $text-light-color;
+  padding: 10px 20px;
+  @include button-hover($text-light-color, $primary-color);
+}
+
+form input {
+  margin-bottom: 20px;
+}
